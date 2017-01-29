@@ -1,0 +1,13 @@
+{
+    "name": "elzekool/iot_cart_example",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Elze Kool",
+            "email": "info@kooldevelopment.nl"
+        }
+    ],
+    "require": {
+        "php-amqplib/php-amqplib": "^2.6"
+    }
+}

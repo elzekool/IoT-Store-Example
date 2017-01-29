@@ -1,0 +1,17 @@
+version: '2'
+services:
+    apache:
+        build: php
+        volumes:
+            - "${PWD}/webroot:/var/www/html/"
+        ports:
+            - "82:80"
+    rabbitmq:
+        image: rabbitmq:3.6
+        volumes:
+            - "/var/lib/rabbitmq-management"
+        ports:
+            - "5672:5672"
+            - "15672:15672"
+
+
