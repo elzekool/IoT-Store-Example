@@ -19,7 +19,7 @@ if (!is_array($request) || 'POST' !== $_SERVER['REQUEST_METHOD']) {
     exit;
 }
 
-$connection = new AMQPStreamConnection('iotrabbitexample_rabbitmq_1', 5672, 'guest', 'guest');
+$connection = new AMQPStreamConnection('iotstore_rabbitmq_1', 5672, 'guest', 'guest');
 $channel = $connection->channel();
 
 $channel->exchange_declare('orders', 'fanout', false, false, false);
